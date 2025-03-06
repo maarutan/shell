@@ -10,7 +10,6 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 # -- Turbo load
 zinit ice turbo; zinit light romkatv/powerlevel10k
 zinit ice turbo; zinit light zsh-users/zsh-autosuggestions
-zinit ice turbo; zinit light hlissner/zsh-autopair
 zinit ice turbo; zinit light Aloxaf/fzf-tab
 zinit ice turbo; zinit light joshskidmore/zsh-fzf-history-search
 zinit ice turbo; zinit light seebi/dircolors-solarized
@@ -25,6 +24,7 @@ zinit wait lucid for zsh-users/zsh-history-substring-search
 zinit wait lucid for MichaelAquilina/zsh-auto-notify
 zinit wait lucid for zdharma-continuum/fast-syntax-highlighting
 zinit wait lucid for Sam-programs/zsh-calc
+zinit wait lucid for hlissner/zsh-autopair 
 zinit wait lucid for zap-zsh/sudo 
 # zinit wait lucid for 
 

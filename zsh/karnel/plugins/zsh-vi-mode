@@ -24,8 +24,8 @@ zvm_vi_yank() {
         # ---------------- yank macOS
         printf %s "${CUTBUFFER}" | pbcopy  # macOS
 
-    else then 
-        notify-send -- not `copy` utils --
+    # else then 
+    #     notify-send -- not `copy` utils --
     fi
     zvm_exit_visual_mode
 }
