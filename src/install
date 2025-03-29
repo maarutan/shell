@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+install_for_arch() {
+    if command -v zsh &>/dev/null; then
+        echo "zsh already installed"
+    else
+        pacman -S --noconfirm zsh
+    fi
+
+    if command -v git &>/dev/null; then
+        echo "git already installed"
+    else
+        pacman -S --noconfirm git
+    fi
+
+    if command -v python &>/dev/null; then
+        echo "python already installed"
+    else
+        pacman -S --noconfirm python
+    fi
+
+    git clone https://github.com/maaru/shell.git ~/maaru-shell
+    cd ~/maaru-shell/src
+    sh ./buildpy
+}
+
+. /etc/os-release
+case "$ID" in
+    arch)
+        install_for_arch
+        ;;
+    *)
+        echo "This distribution is not Arch. Your distribution: $ID"
+        ;;
+esac
+

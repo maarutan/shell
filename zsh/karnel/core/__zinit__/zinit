@@ -1,0 +1,23 @@
+#!/bin/zsh
+# ┌─┐┬┌┐┌┬┌┬┐  ┬┌─┌─┐┬─┐┌┐┌┌─┐┬
+# ┌─┘│││││ │   ├┴┐├─┤├┬┘│││├┤ │
+# └─┘┴┘└┘┴ ┴   ┴ ┴┴ ┴┴└─┘└┘└─┘┴─┘
+#--------------------------------------------
+# (c) maarutan   https://github.com/maarutan
+
+if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+    if ! command -v git > /dev/null 2>&1; then
+        echo "Git not found"
+        exit 1
+    fi
+    mkdir -p ~/.local/share/zinit && \
+        git clone https://github.com/zdharma-continuum/zinit.git ~/.local/share/zinit/zinit.git
+fi
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+abs_path_z=$(realpath "$(dirname "$0")")
+source "$abs_path_z/plugins"
+

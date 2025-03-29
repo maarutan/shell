@@ -1,0 +1,44 @@
+#!/usr/bin/env python
+
+import pathlib
+import shutil
+
+zshrc = pathlib.Path.home() / ".zshrc"
+zsh_config = pathlib.Path.home() / ".config" / "zsh"
+zinit = pathlib.Path.home() / ".local" / "share" / "zinit"
+
+
+def main():
+    # Delete .zshrc if it exists
+    if zshrc.exists():
+        zshrc.unlink()  # Safely remove the file
+        print("zshrc deleted")
+    else:
+        print("zshrc not found")
+
+    # Delete zinit if it exists
+    if zinit.exists():
+        shutil.rmtree(zinit)  # Recursively remove the directory
+        print("zinit deleted")
+    else:
+        print("zinit not found")
+
+    # Delete zsh config if it exists
+    if zsh_config.exists():
+        shutil.rmtree(zsh_config)  # Recursively remove the directory
+        print("zsh config deleted")
+    else:
+        print("zsh config not found")
+
+    print("\n\nSuccess!!! All files and directories deleted!!!")
+
+
+if __name__ == "__main__":
+    try:
+        inp = input("Are you sure? [y/N] ")
+        if inp.lower() == "y":
+            main()
+        else:
+            print("Aborted")
+    except KeyboardInterrupt:
+        print("\n Aborted.")
