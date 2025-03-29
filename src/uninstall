@@ -1,14 +1,8 @@
 #!/usr/bin/env bash
 
 BUILD() {
-    git clone https://github.com/maarutan/shell.git ~/maaru-shell
-    if [ $? -ne 0 ]; then
-        echo "Failed to clone the repository."
-        exit 1
-    fi
-
     cd ~/maaru-shell/src || { echo "Failed to change directory"; exit 1; }
-    python ./buildpy
+    python ./uninstallpy
     if [ $? -ne 0 ]; then
         echo "Build failed."
         exit 1
@@ -58,4 +52,5 @@ case "$ID" in
         BUILD
         ;;
 esac
+
 

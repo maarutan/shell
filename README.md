@@ -16,3 +16,11 @@ To quickly install the shell, run the following command:
 ```bash
 curl -sSL https://raw.githubusercontent.com/maarutan/shell/master/src/install | sh
 ```
+
+### Uninstallation
+
+To uninstall the shell, run the following command:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/maarutan/shell/master/src/uninstall | sh
+```
