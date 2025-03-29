@@ -22,5 +22,5 @@ curl -sSL https://raw.githubusercontent.com/maarutan/shell/master/src/install | 
 To uninstall the shell, run the following command:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/maarutan/shell/master/src/uninstall | sh
+curl -sSL https://raw.githubusercontent.com/maarutan/shell/master/src/uninstall -y | sh
 ```
