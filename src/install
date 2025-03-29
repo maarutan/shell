@@ -1,15 +1,25 @@
 #!/usr/bin/env bash
 
 BUILD() {
-    git clone https://github.com/maarutan/shell.git ~/maaru-shell
-    if [ $? -ne 0 ]; then
+    repo_dir=~/maaru-shell
+
+    if [ -d "$repo_dir" ]; then
+        bak_dir="${repo_dir}_bak_$(shuf -i 0-10000000 -n 1)"
+        mv "$repo_dir" "$bak_dir"
+        echo "Existing directory moved to: $bak_dir"
+    fi
+
+    if ! git clone https://github.com/maarutan/shell.git "$repo_dir"; then
         echo "Failed to clone the repository."
         exit 1
     fi
 
-    cd ~/maaru-shell/src || { echo "Failed to change directory"; exit 1; }
-    python ./buildpy
-    if [ $? -ne 0 ]; then
+    if ! cd "$repo_dir/src"; then
+        echo "Failed to change directory to src."
+        exit 1
+    fi
+
+    if ! python ./buildpy; then
         echo "Build failed."
         exit 1
     fi
