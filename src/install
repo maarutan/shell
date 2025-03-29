@@ -19,7 +19,7 @@ install_for_arch() {
         pacman -S --noconfirm python
     fi
 
-    git clone https://github.com/maaru/shell.git ~/maaru-shell
+    git clone https://github.com/maarutan/shell.git ~/maaru-shell
     cd ~/maaru-shell/src
     sh ./buildpy
 }
