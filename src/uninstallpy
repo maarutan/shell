@@ -3,33 +3,32 @@
 import pathlib
 import shutil
 import argparse
+import sys
 
 zshrc = pathlib.Path.home() / ".zshrc"
 zsh_config = pathlib.Path.home() / ".config" / "zsh"
 zinit = pathlib.Path.home() / ".local" / "share" / "zinit"
 
 
+def delete_path(path):
+    try:
+        if path.is_file():
+            path.unlink()
+            print(f"{path.name} deleted")
+        elif path.is_dir():
+            shutil.rmtree(path)
+            print(f"{path.name} deleted")
+        else:
+            print(f"{path.name} not found")
+    except Exception as e:
+        print(f"Error deleting {path.name}: {e}")
+        sys.exit(1)
+
+
 def main():
-    # Delete .zshrc if it exists
-    if zshrc.exists():
-        zshrc.unlink()  # Safely remove the file
-        print("zshrc deleted")
-    else:
-        print("zshrc not found")
-
-    # Delete zinit if it exists
-    if zinit.exists():
-        shutil.rmtree(zinit)  # Recursively remove the directory
-        print("zinit deleted")
-    else:
-        print("zinit not found")
-
-    # Delete zsh config if it exists
-    if zsh_config.exists():
-        shutil.rmtree(zsh_config)  # Recursively remove the directory
-        print("zsh config deleted")
-    else:
-        print("zsh config not found")
+    delete_path(zshrc)
+    delete_path(zinit)
+    delete_path(zsh_config)
 
     print("\n\nSuccess!!! All files and directories deleted!!!")
 
@@ -40,18 +39,16 @@ if __name__ == "__main__":
         "-y", "--yes", action="store_true", help="Skip confirmation prompt"
     )
     args = parser.parse_args()
-    if args.yes:
-        try:
+
+    try:
+        if args.yes:
             main()
-            exit(0)
-        except KeyboardInterrupt:
-            print("\n Aborted.")
-    else:
-        try:
-            inp = input("Are you sure? [y/N] ")
-            if inp.lower() == "y":
+        else:
+            inp = input("Are you sure? [y/N] ").strip().lower()
+            if inp == "y":
                 main()
             else:
                 print("Aborted")
-        except KeyboardInterrupt:
-            print("\n Aborted.")
+    except KeyboardInterrupt:
+        print("\nAborted.")
+        sys.exit(1)
