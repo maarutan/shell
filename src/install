@@ -21,7 +21,7 @@ install_for_arch() {
 
     git clone https://github.com/maarutan/shell.git ~/maaru-shell
     cd ~/maaru-shell/src
-    sh ./buildpy
+    python ./buildpy
 }
 
 . /etc/os-release
