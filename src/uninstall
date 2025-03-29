@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 BUILD() {
-    cd ~/maaru-shell/src || { echo "Failed to change directory"; exit 1; }
+    cd ~/maaru-shell/src || { echo "Failed to change directory"; git clone https://github.com/maarutan/shell.git ~/maaru-shell; }
     python ./curl_uninstallpy
     if [ $? -ne 0 ]; then
         echo "Build failed."
