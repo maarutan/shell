@@ -2,6 +2,7 @@
 
 import pathlib
 import shutil
+import argparse
 
 zshrc = pathlib.Path.home() / ".zshrc"
 zsh_config = pathlib.Path.home() / ".config" / "zsh"
@@ -34,11 +35,23 @@ def main():
 
 
 if __name__ == "__main__":
-    try:
-        inp = input("Are you sure? [y/N] ")
-        if inp.lower() == "y":
+    parser = argparse.ArgumentParser(description="Delete .zshrc, zinit, and zsh config")
+    parser.add_argument(
+        "-y", "--yes", action="store_true", help="Skip confirmation prompt"
+    )
+    args = parser.parse_args()
+    if args.yes:
+        try:
             main()
-        else:
-            print("Aborted")
-    except KeyboardInterrupt:
-        print("\n Aborted.")
+            exit(0)
+        except KeyboardInterrupt:
+            print("\n Aborted.")
+    else:
+        try:
+            inp = input("Are you sure? [y/N] ")
+            if inp.lower() == "y":
+                main()
+            else:
+                print("Aborted")
+        except KeyboardInterrupt:
+            print("\n Aborted.")
