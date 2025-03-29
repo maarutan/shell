@@ -2,7 +2,7 @@
 
 BUILD() {
     cd ~/maaru-shell/src || { echo "Failed to change directory"; exit 1; }
-    python ./uninstallpy
+    python ./curl_uninstallpy
     if [ $? -ne 0 ]; then
         echo "Build failed."
         exit 1
