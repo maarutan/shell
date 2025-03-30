@@ -40,7 +40,6 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    try:
         if args.yes:
             main()
         else:
@@ -49,6 +48,4 @@ if __name__ == "__main__":
                 main()
             else:
                 print("Aborted")
-    except KeyboardInterrupt:
-        print("\nAborted.")
         sys.exit(1)

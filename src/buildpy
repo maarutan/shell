@@ -35,6 +35,6 @@ if __name__ == "__main__":
 
         subprocess.run(["zsh", "-c", "source ~/.zshrc"])
     except KeyboardInterrupt:
-        print("\nAborted.")
+        subprocess.run(["zsh"])
     except Exception as e:
         print(f"\nError: {e}")
