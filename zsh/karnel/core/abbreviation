@@ -5,9 +5,9 @@
 #--------------------------------------------
 # (c) maarutan   https://github.com/maarutan
 
-#########
-# pack #
-#########
+##########
+## pack ##
+##########
 abbr ps "sudo pacman -S"
 abbr pu "sudo pacman -Syu"
 abbr pr "sudo pacman -R"
@@ -21,9 +21,9 @@ abbr yrns "yay -Rns"
 abbr yrd "yay -Rdd"
 
 
-#######
-# cd #
-#######
+########
+## cd ##
+########
 abbr cfg  "cd $HOME/.config"
 abbr ncfg "cd $HOME/.config/nvim"
 abbr ycfg "cd $HOME/.config/yazi"
@@ -35,9 +35,9 @@ abbr trh "cd $HOME/.local/share/Trash"
 abbr h   "cd $HOME"
 
 
-########
-# git #
-########
+#########
+## git ##
+#########
 abbr g "git"
 abbr gs "git status"
 abbr gib "git init -b"

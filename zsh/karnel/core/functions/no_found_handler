@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 command_not_found_handler() {
     # ANSI color codes
     local yellow="\e[33m"

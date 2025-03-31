@@ -5,19 +5,25 @@
 #--------------------------------------------
 # (c) maarutan   https://github.com/maarutan
 
+###############
+## variables ##
+###############
 EXPLORE="yazi"
 ROOTEXPLORE="yazi"
 
 EDITOR="nvim"
 ROOTEDITOR="nvim"
 
-# change directory
+######################
+## change directory ##
+######################
 alias ..="cd .."
 alias ...="cd ../.."
 alias ~="cd ~"
-alias go="cd"
 
-# system
+############
+## system ##
+############
 alias cls="clear && exec $(basename $SHELL)"
 alias cls!="clear"
 alias rzh="rm -rf $HOME/.zsh/.zsh_history"
@@ -38,8 +44,9 @@ alias n=$"EDITOR"
 alias rn="sudo -E \${ROOTEDITOR}"
 alias cpp="copypath"
 
-# utils
-alias g="z"
+###########
+## utils ##
+###########
 alias walchoice="$HOME/wallpapers/.choise.sh"
 alias gay="$HOME/.suckless/scripts/gay.sh"
 alias nzsh="nvim ~/.zshrc"

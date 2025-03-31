@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 function copypath {
     local file="${1:-.}"
 

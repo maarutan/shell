@@ -16,3 +16,6 @@ source "$ZSH_CONFIG/$KARNEL_DIR/core/__zinit__/zinit"
 source "$ZSH_CONFIG/$KARNEL_DIR/core/keybindings"
 source "$ZSH_CONFIG/$KARNEL_DIR/core/funcinit"
 source "$ZSH_CONFIG/$KARNEL_DIR/core/abbreviation"
+
+# Plugins
+source "$ZSH_CONFIG/$KARNEL_DIR/plugins/zsh-vi-mode"
