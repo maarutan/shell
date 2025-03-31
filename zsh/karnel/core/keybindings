@@ -26,3 +26,5 @@ bindkey '^ ' magic-space # ctrl + space
 # sudo
 
 bindkey '^R' add_sudo_to_start # ctrl + r
+
+
