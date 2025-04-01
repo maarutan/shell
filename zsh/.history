@@ -1165,7 +1165,6 @@ pamixer -t
 pamixer -h | grep "mic"
 pactl list sources\
 
-bluetui
 brightnessctl get
 brightness max
 brightness
@@ -1576,7 +1575,6 @@ cat
 3 + 3
 12 -12 
 asdf
-yazi
 bindkey ' ' expand-abbr # space\
 bindkey '^M' smart_enter # retrun | enter\
 bindkey '^ ' magic-space # ctrl + space\
@@ -1589,7 +1587,6 @@ source "$ZAP_PATH/zap.zsh"\
 zap
 ..
 ...
-l
 r
 exec zshh
 exec
@@ -1718,7 +1715,6 @@ source ~/.zshrc
 ll
 s
 ./install
-Ñƒ£
 figlet -f Calvin\ S order modules
 figlet -f Calvin\ S order of the modules
 figlet -f Calvin\ S workspaces
@@ -1771,7 +1767,6 @@ nmcli dev list
 nmcli dev
 nmcli dev wifi connect Lavrovyh\ 14 password 79120414
 nmtui
-zsh
 cclear
 paru -S systembus-notify
 notify-send
@@ -1843,7 +1838,6 @@ ip link
 ping 1.1.1.1
 nmcli dev wifi list
 iron
-
 paru -S nvidia-dkms
 paru -S nvidia-dkms nvidia-settings nvidia-utils
 lsblk
@@ -1865,7 +1859,6 @@ nvidia-smi
 paru -S btop
 sudo mkinitcpio -P\
 
-cd /home/maaru/.config/zsh
 paru -S qalc calc bc
 4 + 3
 2 -2
@@ -2099,7 +2092,6 @@ echo 3 - 3
 echo $(3 - 3)
 ear
 zinit bindkeys
-clear
 2 - 3
 qalc 3 - 3
 qalc 3 + 3
@@ -2147,7 +2139,6 @@ ffmpeg -i /home/maaru/Pictures/wallpapers/live/catppuccin/andvari-last-origin.19
 w
 bto
 btop
-ex
 paru -S ttf-font-awesome
 z kitty
 paru -S ttf-font-awesome-5
@@ -2163,61 +2154,66 @@ paru -S ttf-font-awesome\
 
 Ñ‚Ð¼Ñƒ¨Ñƒ¬
 z .local/share/nvim
-ls
 paru -S ripgrep
-nvim
-e
 git add -A ; git commit -m "update"; git push --force
 git push
 exit
-: 1743423754:0;paru -S ttf-apple-emoji
-: 1743424125:0;nvim
-: 1743424193:0;paru -S network-manager-applet blueman bluez
-: 1743424213:0;paru -S bluez-utils
-: 1743424227:0;paru -S bluetui
-: 1743424238:0;bluetui
-: 1743424249:0;sudo systemctl enable bluetooth.service
-: 1743424255:0;clear
-: 1743424258:0;l
-: 1743424258:0;ls
-: 1743424264:0;bluetui
-: 1743425029:0;sudo systemctl start bluetooth.service
-: 1743425035:0;bluetui
-: 1743425142:0;paru -S pavucontrol
-: 1743425155:0;bluetui
-: 1743425368:0;cliphist
-: 1743425372:0;paru -S cliphist
-: 1743425378:0;cliphist
-: 1743425416:0;exec-once = wl-paste --watch cliphist store &\
+paru -S ttf-apple-emoji
+paru -S network-manager-applet blueman bluez
+paru -S bluez-utils
+paru -S bluetui
+sudo systemctl enable bluetooth.service
+l
+sudo systemctl start bluetooth.service
+paru -S pavucontrol
+bluetui
+paru -S cliphist
+cliphist
+exec-once = wl-paste --watch cliphist store &\
 exec-once = wl-clip-persist --clipboard regular --display wayland-1 &\
 exec-once = wl-paste --type text --watch cliphist store & \
 exec-once = wl-paste --type image --watch cliphist store & \
 
-: 1743425438:0;wl-paste --watch cliphist store &\
+wl-paste --watch cliphist store &\
 wl-paste --type text --watch cliphist store & \
 wl-paste --type image --watch cliphist store & \
 
-: 1743425665:0;paru -S polkit-gnome
-: 1743425669:0;e
-: 1743425683:0;yazi
-: 1743425688:0;sudo mkdir hello
-: 1743425690:0;e
-: 1743425974:0;clear
-: 1743425974:0;ls
-: 1743425983:0;cd /home/maaru/.config/zsh
-: 1743425983:0;e
-: 1743426071:0;ls
-: 1743426071:0;e
-: 1743426085:0;git init
-: 1743426101:0;git remote add git@github.com:maarutan/shell
-: 1743426108:0;git remote add url git@github.com:maarutan/shell
-: 1743426112:0;ls
-: 1743426112:0;e
-: 1743426134:0;git checkout HEAD .
-: 1743426135:0;e
-: 1743426163:0;git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)\
+paru -S polkit-gnome
+yazi
+sudo mkdir hello
+cd /home/maaru/.config/zsh
+git init
+git remote add git@github.com:maarutan/shell
+git remote add url git@github.com:maarutan/shell
+ls
+git checkout HEAD .
+git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)\
 
-: 1743426163:0;Ñƒ£
-: 1743426165:0;e
-: 1743426196:0;git clone git@github.com:maarutan/shell
-: 1743426200:0;e
+Ñƒ£
+git clone git@github.com:maarutan/shell
+nvim
+ex
+
+bindkey | grep "sudo"
+bindkey "^R" sudo-command-line\
+
+e
+clear
+bindkey
+bindkey | grep '^R' \
+
+bindkey | grep ^R\
+
+bindkey | grep R\
+
+bindkey -r '^R'\
+
+bindkey '^R' add_sudo_to_start \
+
+zsh
+: 1743545296:0;bindkey -e\
+
+: 1743545411:0;nvim
+: 1743545463:0;e
+: 1743545478:0;clear
+: 1743545489:0;git add -A ; git commit -m "update | karnel"; git push --force
