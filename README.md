@@ -4,10 +4,10 @@
 
 ##### ---------- hot link ----------
 
-[ ==> install <==](Installation) <br />
-[ ==> uninstall <==](Installation) <br />
-[ ==> screenshots <==](Screenshots) <br />
-[ ==> dependencies <==](Dependencies) <br />
+[ >>>> install <<<<](Installation) <br />
+[ >>>> uninstall <<<<](Installation) <br />
+[ >>>> screenshots <<<<](Screenshots) <br />
+[ >>>> dependencies <<<<](Dependencies) <br />
 
 ### Features:
 
