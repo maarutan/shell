@@ -31,7 +31,7 @@
 - if your system **macOS** `pbcopy`
 - if your system **linux_X11** `xsel, xclip`
 - if your system **linux_Wayland** `wl-clipboard`
-- for zsh-vi-mode supports copy in normal mode with `y`
+- for **zsh-vi-mode** supports copy in normal mode with `y`
 
 ### Installation
 
