@@ -1703,7 +1703,6 @@ man bindkey
 bindkey -h
 bindkey --help
 abbr ps "sudo pacman "
-abbr
 claer
 cls
 $ZSH_CONFIG/keybindings.zsh
@@ -1712,7 +1711,6 @@ fzf_history_search
 which fzf-tab-complete fzf_history_search expand-abbr smart_enter add_sudo_to_startE
 expand-abbr
 source ~/.zshrc
-ll
 s
 ./install
 figlet -f Calvin\ S order modules
@@ -2155,8 +2153,6 @@ paru -S ttf-font-awesome\
 Ñ‚Ð¼Ñƒ¨Ñƒ¬
 z .local/share/nvim
 paru -S ripgrep
-git add -A ; git commit -m "update"; git push --force
-git push
 exit
 paru -S ttf-apple-emoji
 paru -S network-manager-applet blueman bluez
@@ -2185,20 +2181,16 @@ cd /home/maaru/.config/zsh
 git init
 git remote add git@github.com:maarutan/shell
 git remote add url git@github.com:maarutan/shell
-ls
 git checkout HEAD .
 git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)\
 
 Ñƒ£
 git clone git@github.com:maarutan/shell
-nvim
 ex
 
 bindkey | grep "sudo"
 bindkey "^R" sudo-command-line\
 
-e
-clear
 bindkey
 bindkey | grep '^R' \
 
@@ -2210,14 +2202,54 @@ bindkey -r '^R'\
 
 bindkey '^R' add_sudo_to_start \
 
-zsh
-: 1743545296:0;bindkey -e\
+bindkey -e\
 
-: 1743545411:0;nvim
-: 1743545463:0;e
-: 1743545478:0;clear
-: 1743545489:0;git add -A ; git commit -m "update | karnel"; git push --force
-: 1743545491:0;e
-: 1743545510:0;git add -A ; git commit -m "update | karnel"; git push --force
-: 1743545520:0;e
-: 1743545531:0;git add -A ; git commit -m "update"; git push --force
+git add -A ; git commit -m "update | karnel"; git push --force
+git add -A ; git commit -m "update"; git push --force
+git clone --depth 1 --single-branch git@github.com:maarutan/zsh-abbr.git
+figlet -f Calvin\ S abbreviation.zsh
+git add -A ; git commit -m "first commit"; git push --force
+abbr
+abbr ps "sudo pacman"
+which abbr
+abbr ll='ls -l'\
+abbr gs='git status'\
+
+set_abbr ll='ls -l'\
+
+gs
+ll
+define_abbr ll='ls -l'\
+define_abbr gs='git status'\
+
+set_abbr ll='ls -l'\
+set_abbr gs='git status'\
+
+abbr ps "sudo pacman -S"\
+abbr pu "sudo pacman -Syu"\
+abbr pr "sudo pacman -R"\
+abbr prns "sudo pacman -Rns"\
+abbr prdd "sudo pacman -Rdd"\
+
+nvim
+zinit update maarutan/zsh-abbr
+zsh
+git add -A .
+git commit -m "update | README.md"
+git push
+./mfetch
+ls
+./mfetch.py
+./zprogfetch.py
+p10k
+e
+figlet -f Calvin\ S minimal
+figlet -f Calvin\ S rounded
+clear
+p10k configure
+: 1743601357:0;clear
+: 1743601367:0;ar
+: 1743601368:0;clear
+: 1743601479:0;figlet -f Calvin\ S knife
+: 1743601611:0;btop
+: 1743601645:0;e
