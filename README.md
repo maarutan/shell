@@ -2,7 +2,7 @@
 
 **maaru Shell** is an enhanced and fast Zsh shell with numerous plugins and customizations for improved performance and usability.
 
-##### hot link
+##### ---------- hot link ----------
 
 [ --> install <--](Installation) <br />
 [ --> uninstall <--](Installation) <br />
