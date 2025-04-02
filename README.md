@@ -4,10 +4,10 @@
 
 ##### ---------- hot link ----------
 
-[ > \_**\_install\_\_** <](Installation) <br />
-[ > \_**\_uninstall\_\_** <](Installation) <br />
-[ > \_**\_screenshots\_\_** <](Screenshots) <br />
-[ > \_**\_dependencies\_\_** <](Dependencies) <br />
+[ > \_**\_install\_\_** <](#Installation) <br />
+[ > \_**\_uninstall\_\_** <](#Installation) <br />
+[ > \_**\_screenshots\_\_** <](#Screenshots) <br />
+[ > \_**\_dependencies\_\_** <](#Dependencies) <br />
 
 ### Features:
 
