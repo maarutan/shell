@@ -19,12 +19,13 @@
   `zoxide`,
   `z`,
 
---
+---
+
 `zsh`
 `curl`
 `python`
 
---
+---
 
 - if your system **macOS** `pbcopy`
 - if your system **linux_X11** `xsel, xclip`
