@@ -1,3 +1,5 @@
+![logo](./.preview/logo.png)
+
 # Shell - maaru
 
 **maaru Shell** is an enhanced and fast Zsh shell with numerous plugins and customizations for improved performance and usability.
