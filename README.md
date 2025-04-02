@@ -51,13 +51,14 @@ gonna to NORMAL mode `jk`, `jj`
 
 ## fzf-tab
 
-- supports eza + exa
-  ![image](./preview/fzf-tab_eza.png)
-  ![image](./preview/fzf-tab_eza.png)
+#### supports eza + exa
+
+![image](.preview/fzf-tab_eza.png)
+![image](.preview/fzf-tab_eza.png)
 
 # and more plugins
 
-[zinit plugins](./zsh/karnel/core/__zinit__/plugins)
+[zinit plugins](zsh/karnel/core/__zinit__/plugins)
 
 ### Installation
 
