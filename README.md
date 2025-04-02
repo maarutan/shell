@@ -1,4 +1,4 @@
-![Image](https://github.com/user-attachments/assets/a5d1710a-cfe4-4c16-975e-f2b10c3d1972)
+![Image](.preview/logo.png)
 
 # Shell - maaru
 
