@@ -21,9 +21,10 @@
 
 ---
 
-`zsh`
-`curl`
-`python`
+- for your system
+  `zsh`
+  `curl`
+  `python`
 
 ---
 
