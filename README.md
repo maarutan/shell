@@ -2,6 +2,13 @@
 
 **maaru Shell** is an enhanced and fast Zsh shell with numerous plugins and customizations for improved performance and usability.
 
+##### hot link
+
+[~~> install <~~](Installation)
+[~~> uninstall <~~](Installation)
+[~~> screenshots <~~](Screenshots)
+[~~> dependencies <~~](Dependencies)
+
 ### Features:
 
 - Uses **Powerlevel10k** for a beautiful and customizable prompt.
@@ -9,7 +16,7 @@
 - Uses the **Zinit** plugin manager, which significantly speeds up plugin loading.
 - Supports abbreviations similar to the **Fish shell** for faster command execution, with manual plugin configuration options.
 
-### dependencies
+### Dependencies
 
 - for zsh
   `fzf`,
