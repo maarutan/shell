@@ -5,8 +5,11 @@
 ##### hot link
 
 [ --> install <--](Installation)
+\n
 [ --> uninstall <--](Installation)
+\n
 [ --> screenshots <--](Screenshots)
+\n
 [ --> dependencies <--](Dependencies)
 
 ### Features:
