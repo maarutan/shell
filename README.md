@@ -46,7 +46,8 @@
 
 ### zsh-vi-mode = zvm
 
--- https://github.com/user-attachments/assets/b1c42d3d-10a6-47d5-8ddb-695f1d1ecefd
+https://github.com/user-attachments/assets/b1c42d3d-10a6-47d5-8ddb-695f1d1ecefd
+
 gonna to NORMAL mode `jk`, `jj`
 
 ## fzf-tab
