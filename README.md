@@ -8,7 +8,7 @@
 
 [ > \_**\_install\_\_** <](#Installation) <br />
 [ > \_**\_uninstall\_\_** <](#Installation) <br />
-[ > \_**\_screenshots\_\_** <](#Screenshots) <br />
+[ > \_**\_Example\_\_** <](#Example) <br />
 [ > \_**\_dependencies\_\_** <](#Dependencies) <br />
 
 ### Features:
@@ -41,6 +41,23 @@
 - if your system **linux_X11** `xsel, xclip`
 - if your system **linux_Wayland** `wl-clipboard`
 - for **zsh-vi-mode** supports copy in normal mode with `y`
+
+# Example
+
+### zsh-vi-mode = zvm
+
+-- https://github.com/user-attachments/assets/b1c42d3d-10a6-47d5-8ddb-695f1d1ecefd
+gonna to NORMAL mode `jk`, `jj`
+
+## fzf-tab
+
+- supports eza + exa
+  ![image](./preview/fzf-tab_eza.png)
+  ![image](./preview/fzf-tab_eza.png)
+
+# and more plugins
+
+[zinit plugins](./zsh/karnel/core/__zinit__/plugins)
 
 ### Installation
 
