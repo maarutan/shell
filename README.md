@@ -92,7 +92,7 @@ gonna to NORMAL mode `jk`, `jj`
 #### supports eza + exa
 
 ![image](.preview/fzf-tab_eza.png)
-![image](.preview/fzf-tab_eza.png)
+![image](.preview/fzf-tab_bat.png)
 
 # and more plugins
 
