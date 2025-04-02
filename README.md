@@ -1,4 +1,4 @@
-![Image](.preview/logo.png)
+<img src=".preview/logo.png" alt="Image" width="200">
 
 # Shell - maaru
 
