@@ -1,4 +1,4 @@
-![logo](./.preview/logo.png)
+![](./.preview/logo.png)
 
 # Shell - maaru
 
