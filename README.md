@@ -37,6 +37,43 @@
 
 ---
 
+## better stucture
+
+```
+ .
+├──  init
+└──  karnel
+    ├──  core
+    │   ├──  __zinit__
+    │   │   ├──  plugins
+    │   │   └──  zinit
+    │   ├──  abbreviation
+    │   ├──  aliases
+    │   ├──  beauty
+    │   ├──  environments
+    │   ├──  funcinit
+    │   ├──  functions
+    │   │   ├──  abbreviation
+    │   │   ├──  copypath
+    │   │   ├──  no_found_handler
+    │   │   ├──  sudo
+    │   │   └──  yazi
+    │   ├──  keybindings
+    │   ├──  themeinit
+    │   └──  themes
+    │       ├──  knife
+    │       ├──  minimal
+    │       ├──  norounded
+    │       └──  rounded
+    └──  plugins
+        ├──  fzf-history
+        ├──  fzf-tab
+        ├──  syntax-highlighting
+        ├──  zsh-vi-mode
+        └──  zsh_autosuggest
+
+```
+
 - if your system **macOS** `pbcopy`
 - if your system **linux_X11** `xsel, xclip`
 - if your system **linux_Wayland** `wl-clipboard`
