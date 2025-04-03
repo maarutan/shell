@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+# ┌┐ ┬ ┬┬┬  ┌┬┐  ┌─┐┬ ┬
+# ├┴┐│ │││   ││  ├─┘└┬┘
+# └─┘└─┘┴┴─┘─┴┘  ┴   ┴
+# --------------------------------------------
+# (c) maarutan   https://github.com/maarutan
 
 import pathlib
 import shutil
