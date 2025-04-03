@@ -1,8 +1,31 @@
 #!/usr/bin/env bash
+# ┬ ┬┌┐┌┬┌┐┌┌─┐┌┬┐┌─┐┬  ┬  
+# │ ││││││││└─┐ │ ├─┤│  │  
+# └─┘┘└┘┴┘└┘└─┘ ┴ ┴ ┴┴─┘┴─┘
+#--------------------------------------------
+# (c) maarutan   https://github.com/maarutan
+
+
+REPO_NAME="maaru-shell"
+REPO_URL="https://github.com/maarutan/shell.git"
 
 BUILD() {
-    cd ~/maaru-shell/src || { echo "Failed to change directory"; git clone https://github.com/maarutan/shell.git ~/maaru-shell; }
-    python ./curl_uninstallpy
+    REPO_PATH="$HOME/$REPO_NAME"
+
+    if [ ! -d "$REPO_PATH/src" ]; then
+        echo "Repository not found. Cloning..."
+        git clone "$REPO_URL" "$REPO_PATH" || { echo "Failed to clone repository"; exit 1; }
+    fi
+
+    cd "$REPO_PATH/src" || { echo "Failed to change directory"; exit 1; }
+
+    if [ -x "./deletepy" ]; then
+        ./deletepy
+    else
+        echo "Build script ./deletepy not found or not executable."
+        exit 1
+    fi
+
     if [ $? -ne 0 ]; then
         echo "Build failed."
         exit 1
@@ -10,47 +33,23 @@ BUILD() {
 }
 
 . /etc/os-release
-case "$ID" in
-    arch)
-        if command -v zsh &>/dev/null; then
-            echo "zsh already installed"
-        else
-            pacman -S --noconfirm zsh
-        fi
 
-        if command -v git &>/dev/null; then
-            echo "git already installed"
-        else
-            pacman -S --noconfirm git
+if [ "$ID" = "arch" ]; then
+    packages=(zsh git python)
+    for pkg in "${packages[@]}"; do
+        if ! command -v "$pkg" &>/dev/null; then
+            pacman -S --noconfirm "$pkg"
         fi
+    done
+else
+    for pkg in zsh git python; do
+        if command -v "$pkg" &>/dev/null; then
+            echo "$pkg already installed"
+        else
+            echo "$pkg not found"
+        fi
+    done
+fi
 
-        if command -v python &>/dev/null; then
-            echo "python already installed"
-        else
-            pacman -S --noconfirm python
-        fi
-        BUILD
-        ;;
-    *)
-        if command -v zsh &>/dev/null; then
-            echo "zsh already installed"
-        else
-            echo "zsh not found"
-        fi
-
-        if command -v git &>/dev/null; then
-            echo "git already installed"
-        else
-            echo "git not found"
-        fi
-
-        if command -v python &>/dev/null; then
-            echo "python already installed"
-        else
-            echo "python not found"
-        fi
-        BUILD
-        ;;
-esac
-
+BUILD
 
