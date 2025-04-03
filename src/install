@@ -1,22 +1,39 @@
 #!/usr/bin/env bash
 
-BUILD() {
-    if [ -d ~/maaru-shell ]; then
-        random_num=$((RANDOM * RANDOM))
-        backup_file="~/maaru-shell-bak-$random_num.tar.gz"
+REPO_NAME="maaru-shell"
+REPO_URL="https://github.com/maarutan/shell.git"
 
-        tar -czf $backup_file ~/maaru-shell
+BUILD() {
+    if [ -d "$HOME/$REPO_NAME" ]; then
+        random_num=$((RANDOM * RANDOM))
+        backup_file="$HOME/$REPO_NAME-bak-$random_num"
+        mv "$HOME/$REPO_NAME" "$backup_file"
         echo "Backup created at $backup_file"
     fi
 
-    git clone https://github.com/maarutan/shell.git ~/maaru-shell
+    git clone "$REPO_URL" "$HOME/$REPO_NAME"
     if [ $? -ne 0 ]; then
         echo "Failed to clone the repository."
         exit 1
     fi
 
-    cd ~/maaru-shell/src || { echo "Failed to change directory"; exit 1; }
-    python ./buildpy
+    if [ ! -d "$HOME/$REPO_NAME/src" ]; then
+        echo "Source directory not found"
+        exit 1
+    fi
+
+    cd "$HOME/$REPO_NAME/src" || { echo "Failed to change directory"; exit 1; }
+    
+    if [ -f "./buildpy" ]; then
+        chmod +x ./buildpy
+        ./buildpy
+    elif [ -f "./buildpy.py" ]; then
+        python ./buildpy.py
+    else
+        echo "Build script not found."
+        exit 1
+    fi
+
     if [ $? -ne 0 ]; then
         echo "Build failed."
         exit 1
@@ -26,43 +43,21 @@ BUILD() {
 . /etc/os-release
 case "$ID" in
     arch)
-        if command -v zsh &>/dev/null; then
-            echo "zsh already installed"
-        else
-            pacman -S --noconfirm zsh
-        fi
-
-        if command -v git &>/dev/null; then
-            echo "git already installed"
-        else
-            pacman -S --noconfirm git
-        fi
-
-        if command -v python &>/dev/null; then
-            echo "python already installed"
-        else
-            pacman -S --noconfirm python
-        fi
+        for pkg in zsh git python; do
+            if ! command -v "$pkg" &>/dev/null; then
+                pacman -S --noconfirm "$pkg"
+            fi
+        done
         BUILD
         ;;
     *)
-        if command -v zsh &>/dev/null; then
-            echo "zsh already installed"
-        else
-            echo "zsh not found"
-        fi
-
-        if command -v git &>/dev/null; then
-            echo "git already installed"
-        else
-            echo "git not found"
-        fi
-
-        if command -v python &>/dev/null; then
-            echo "python already installed"
-        else
-            echo "python not found"
-        fi
+        for pkg in zsh git python; do
+            if command -v "$pkg" &>/dev/null; then
+                echo "$pkg already installed"
+            else
+                echo "$pkg not found"
+            fi
+        done
         BUILD
         ;;
 esac
