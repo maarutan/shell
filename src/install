@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# ┬┌┐┌┌─┐┌┬┐┌─┐┬  ┬  
+# ││││└─┐ │ ├─┤│  │  
+# ┴┘└┘└─┘ ┴ ┴ ┴┴─┘┴─┘
+#--------------------------------------------
+# (c) maarutan   https://github.com/maarutan
+
 
 REPO_NAME="maaru-shell"
 REPO_URL="https://github.com/maarutan/shell.git"
