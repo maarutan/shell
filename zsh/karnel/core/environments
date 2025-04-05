@@ -25,11 +25,12 @@ unsetopt HIST_EXPIRE_DUPS_FIRST # Disables removing older duplicates first durin
 unsetopt EXTENDED_HISTORY       # Disables saving timestamps in history
 
 # ---- Path ----
-export PATH="$HOME/.local/share/nvim/mason/bin:\  
-             $HOME/.cargo/bin:                 \ 
-             $HOME/.local/bin:                 \ 
-             $HOME/.npm-global/bin:            \ 
-             $HOME/go/bin:                     \ 
+export GOPATH="$HOME/.config/go"
+export PATH="$HOME/.local/share/nvim/mason/bin: \  
+             $HOME/.cargo/bin:                  \ 
+             $HOME/.local/bin:                  \ 
+             $HOME/.npm-global/bin:             \ 
+             $HOME/.go/bin:                     \ 
              $HOME/.cargo/bin:$PATH"
 
 
