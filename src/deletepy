@@ -1,0 +1,47 @@
+#!/usr/bin/env python
+# ┌┬┐┌─┐┬  ┌─┐┌┬┐┌─┐  ┌─┐┬ ┬
+#  ││├┤ │  ├┤  │ ├┤   ├─┘└┬┘
+# ─┴┘└─┘┴─┘└─┘ ┴ └─┘  ┴   ┴
+# --------------------------------------------
+# (c) maarutan   https://github.com/maarutan
+
+import pathlib
+import shutil
+import argparse
+import sys
+
+zshrc = pathlib.Path.home() / ".zshrc"
+zsh_config = pathlib.Path.home() / ".config" / "zsh"
+zinit = pathlib.Path.home() / ".local" / "share" / "zinit"
+
+
+def delete_path(path):
+    try:
+        if path.is_file():
+            path.unlink()
+            print(f"{path.name} deleted")
+        elif path.is_dir():
+            shutil.rmtree(path)
+            print(f"{path.name} deleted")
+        else:
+            print(f"{path.name} not found")
+    except Exception as e:
+        print(f"Error deleting {path.name}: {e}")
+        sys.exit(1)
+
+
+def main():
+    delete_path(zshrc)
+    delete_path(zinit)
+    delete_path(zsh_config)
+
+    print("\n\nSuccess!!! All files and directories deleted!!!")
+
+
+if __name__ == "__main__":
+    try:
+        main()
+        print("Aborted")
+    except KeyboardInterrupt:
+        print("\nAborted.")
+        sys.exit(1)

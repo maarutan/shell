@@ -1,0 +1,31 @@
+#!/bin/zsh
+# ┌─┐┬┌┐┌┬┌┬┐  ┌─┐┬  ┬ ┬┌─┐┬┌┐┌┌─┐
+# ┌─┘│││││ │   ├─┘│  │ ││ ┬││││└─┐
+# └─┘┴┘└┘┴ ┴   ┴  ┴─┘└─┘└─┘┴┘└┘└─┘
+#--------------------------------------------
+# (c) maarutan   https://github.com/maarutan
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+
+# -- Turbo load
+zinit ice turbo; zinit light romkatv/powerlevel10k
+zinit ice turbo; zinit light zsh-users/zsh-autosuggestions
+zinit ice turbo; zinit light Aloxaf/fzf-tab
+zinit ice turbo; zinit light joshskidmore/zsh-fzf-history-search
+zinit ice turbo; zinit light seebi/dircolors-solarized
+zinit ice turbo; zinit light jeffreytse/zsh-vi-mode
+# zinit ice turbo; zinit light 
+
+# -- Normal load
+zinit wait lucid for agkozak/zsh-z
+zinit wait lucid for zsh-users/zsh-completions
+zinit wait lucid for djui/alias-tips
+zinit wait lucid for zsh-users/zsh-history-substring-search
+zinit wait lucid for MichaelAquilina/zsh-auto-notify
+zinit wait lucid for zdharma-continuum/fast-syntax-highlighting
+zinit wait lucid for Sam-programs/zsh-calc
+zinit wait lucid for hlissner/zsh-autopair 
+zinit wait lucid for zap-zsh/sudo 
+# zinit wait lucid for 
+
+
