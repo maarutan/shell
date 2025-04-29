@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# ┬┌┐┌┌─┐┌┬┐┌─┐┬  ┬  
+# ││││└─┐ │ ├─┤│  │  
+# ┴┘└┘└─┘ ┴ ┴ ┴┴─┘┴─┘
+#--------------------------------------------
+# (c) maarutan   https://github.com/maarutan
+
+
+REPO_NAME="maaru-shell"
+REPO_URL="https://github.com/maarutan/shell.git"
+
+BUILD() {
+    if [ -d "$HOME/$REPO_NAME" ]; then
+        random_num=$((RANDOM * RANDOM))
+        backup_file="$HOME/$REPO_NAME-bak-$random_num"
+        mv "$HOME/$REPO_NAME" "$backup_file"
+        echo "Backup created at $backup_file"
+    fi
+
+    git clone "$REPO_URL" "$HOME/$REPO_NAME"
+    if [ $? -ne 0 ]; then
+        echo "Failed to clone the repository."
+        exit 1
+    fi
+
+    if [ ! -d "$HOME/$REPO_NAME/src" ]; then
+        echo "Source directory not found"
+        exit 1
+    fi
+
+    cd "$HOME/$REPO_NAME/src" || { echo "Failed to change directory"; exit 1; }
+    
+    if [ -f "./buildpy" ]; then
+        chmod +x ./buildpy
+        ./buildpy
+    elif [ -f "./buildpy.py" ]; then
+        python ./buildpy.py
+    else
+        echo "Build script not found."
+        exit 1
+    fi
+
+    if [ $? -ne 0 ]; then
+        echo "Build failed."
+        exit 1
+    fi
+}
+
+. /etc/os-release
+case "$ID" in
+    arch)
+        for pkg in zsh git python; do
+            if ! command -v "$pkg" &>/dev/null; then
+                pacman -S --noconfirm "$pkg"
+            fi
+        done
+        BUILD
+        ;;
+    *)
+        for pkg in zsh git python; do
+            if command -v "$pkg" &>/dev/null; then
+                echo "$pkg already installed"
+            else
+                echo "$pkg not found"
+            fi
+        done
+        BUILD
+        ;;
+esac
+

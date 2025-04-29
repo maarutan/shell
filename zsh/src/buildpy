@@ -1,0 +1,45 @@
+#!/usr/bin/env python
+# ┌┐ ┬ ┬┬┬  ┌┬┐  ┌─┐┬ ┬
+# ├┴┐│ │││   ││  ├─┘└┬┘
+# └─┘└─┘┴┴─┘─┴┘  ┴   ┴
+# --------------------------------------------
+# (c) maarutan   https://github.com/maarutan
+
+import pathlib
+import shutil
+import random
+import subprocess
+
+zshrc = pathlib.Path.home() / ".zshrc"
+zsh_config = pathlib.Path.home() / ".config" / "zsh"
+current_zshrc = pathlib.Path(__file__).parent.parent / "zshrc"
+current_zsh_config = pathlib.Path(__file__).parent.parent / "zsh"
+
+
+def backup_and_move(path):
+    if path.exists():
+        backup_path = path.parent / (
+            path.name + ".bak" + str(random.randint(0, 100000000))
+        )
+        shutil.move(str(path), str(backup_path))
+        print(f"Backup created: {backup_path}")
+    else:
+        print(f"{path} does not exist, skipping backup.")
+
+
+if __name__ == "__main__":
+    try:
+        backup_and_move(zshrc)
+
+        backup_and_move(zsh_config)
+
+        shutil.copy(current_zshrc, zshrc)
+        shutil.copytree(str(current_zsh_config), str(zsh_config))
+
+        print("\n\nSuccessfully updated zsh configuration!")
+
+        subprocess.run(["zsh", "-c", "source ~/.zshrc"])
+    except KeyboardInterrupt:
+        subprocess.run(["zsh"])
+    except Exception as e:
+        print(f"\nError: {e}")

@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+# ┌─┐┌─┐┬ ┬  ┬┌┐┌┬┌┬┐
+# ┌─┘└─┐├─┤  │││││ │
+# └─┘└─┘┴ ┴  ┴┘└┘┴ ┴
+#--------------------------------------------
+# (c) maarutan   https://github.com/maarutan
+
+KARNEL_DIR="kernel"
+bindkey -v
+
+# Core
+source "$ZSH_CONFIG/$KARNEL_DIR/core/beauty"
+source "$ZSH_CONFIG/$KARNEL_DIR/core/environments"
+source "$ZSH_CONFIG/$KARNEL_DIR/core/aliases"
+source "$ZSH_CONFIG/$KARNEL_DIR/core/themeinit"
+source "$ZSH_CONFIG/$KARNEL_DIR/core/__zinit__/zinit"
+source "$ZSH_CONFIG/$KARNEL_DIR/core/keybindings"
+source "$ZSH_CONFIG/$KARNEL_DIR/core/funcinit"
+source "$ZSH_CONFIG/$KARNEL_DIR/core/abbreviation"
+
+# Plugins
+source "$ZSH_CONFIG/$KARNEL_DIR/plugins/zsh-vi-mode"
+source "$ZSH_CONFIG/$KARNEL_DIR/plugins/fzf-tab"
+source "$ZSH_CONFIG/$KARNEL_DIR/plugins/fzf-history"
+source "$ZSH_CONFIG/$KARNEL_DIR/plugins/syntax-highlighting"
+source "$ZSH_CONFIG/$KARNEL_DIR/plugins/zsh_autosuggest"
