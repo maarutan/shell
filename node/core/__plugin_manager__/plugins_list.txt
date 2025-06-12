@@ -1,0 +1,17 @@
+romkatv/powerlevel10k
+zsh-users/zsh-autosuggestions
+Aloxaf/fzf-tab
+joshskidmore/zsh-fzf-history-search
+jeffreytse/zsh-vi-mode
+
+agkozak/zsh-z
+zsh-users/zsh-completions
+djui/alias-tips
+zsh-users/zsh-history-substring-search
+MichaelAquilina/zsh-auto-notify
+zdharma-continuum/fast-syntax-highlighting
+Sam-programs/zsh-calc
+hlissner/zsh-autopair 
+zap-zsh/sudo 
+
+
