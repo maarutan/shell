@@ -9,7 +9,8 @@
         <a href="#🧩-directory-structure">🧩 Directory Structure</a> <br/> 
         >    <a href="#⚙️-configuration-explained">  ⚙️ Configuration Explained</a> <br/>
         > > <a href="#🧠-what's-preinstalled-with-`zinit`">  🧠 Which plugins are pre-installed?</a> <br/>
-        <a href="#🚀-installation">🚀 Installation</a> <br/>
+        <a href="#👾-dependencies">👾 Dependencies</a> <br/>
+        > > <a href="#🚀-installation">🚀 Installation</a> <br/>
         <a href="#🗑-uninstallation">🗑 Uninstallation</a> <br/>
         </p>
     </td>
@@ -162,6 +163,24 @@ Happy hacking in the terminal ⚡
 - [Powerlevel10k Config](https://github.com/romkatv/powerlevel10k#configuration)
 - [fzf-tab Setup Guide](https://github.com/Aloxaf/fzf-tab#readme)
 - [zsh-abbr](https://github.com/olets/zsh-abbr)
+
+---
+
+## 👾 Dependencies
+
+- for zsh
+  `fzf`,
+  `bat`,
+  `eza, exa,`,
+  `git`,
+  `zoxide`,
+  `z`,
+
+---
+
+- for your system
+  `zsh`
+  `curl`
 
 ---
 
