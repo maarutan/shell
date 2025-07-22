@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
-# -- welcome to zsh! --
+# -- Welcome to Zsh! --
 
-export ZSH_CONFIG="$HOME/zsh"       # -- zsh config directory
-export ZSH_PLUGINS_MANAGER="zinit"  # -- zinit or other plugin manager
+export ZSH_CONFIG="$HOME/.config/zsh"  # Config directory
+export ZSH_PLUGINS_MANAGER="zinit"     # Plugin manager
 
-source "$ZSH_CONFIG/init.zsh"       # -- load zsh config
+source "$ZSH_CONFIG/init.zsh"          # Load main config
 
