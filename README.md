@@ -2,13 +2,13 @@
 
 <table align="center">
   <tr>
-    <td><img width="376"  alt="Image" src="https://github.com/user-attachments/assets/d9080751-cf6f-4de5-b923-de406177a756" /></td>
+    <td><img width="276"  alt="Image" src="https://github.com/user-attachments/assets/d9080751-cf6f-4de5-b923-de406177a756" /></td>
     <td>
         <p style="font-size:20px">
         <h2>links: </h2> <br/>
         <a href="#🧩-directory-structure">🧩 Directory Structure</a> <br/> 
-        >  <a href="#⚙️-configuration-explained">⚙️ Configuration Explained</a> <br/>
-        >  <a href="#⚙️-configuration-explained">⚙️ Configuration Explained</a> <br/>
+        >    <a href="#⚙️-configuration-explained">⚙️ Configuration Explained</a> <br/>
+        >    <a href="#🧠-what's-preinstalled-with-`zinit`">🧠 Which plugins are pre-installed?</a> <br/>
         <a href="#🚀-installation">🚀 Installation</a> <br/>
         <a href="#🗑-uninstallation">🗑 Uninstallation</a> <br/>
         </p>
