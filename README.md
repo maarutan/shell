@@ -5,8 +5,7 @@
     <td><img width="376"  alt="Image" src="https://github.com/user-attachments/assets/d9080751-cf6f-4de5-b923-de406177a756" /></td>
     <td>
         <p style="font-size:20px">
-> links
-        <a href="#directory-structure">🧩 Directory Structure</a>
+        <a href="#🧩-directory-structure">🧩 Directory Structure</a>
         </p>
     </td>
   </tr>
@@ -76,11 +75,11 @@ This is my custom **Zsh configuration** optimized for **maximum productivity** a
 
 ## ⚙️ Configuration Explained
 
-### 🔹 `src/` directory
+### 🔹 [`src/` directory](#src-directory)
 
 Contains installation and uninstallation scripts. Run them to set up or remove your config.
 
-### 🔹 `zshrc`
+### 🔹 [`zshrc`](#zshrc)
 
 Defines the Zsh configuration root and plugin manager. Example default setup:
 
@@ -94,7 +93,7 @@ export ZSH_PLUGINS_MANAGER="zinit"     # Plugin manager
 source "$ZSH_CONFIG/init.zsh"          # Load main config
 ```
 
-### 🔹 Custom Plugin Manager
+### 🔹 [Custom Plugin Manager](#custom-plugin-manager)
 
 To add your own plugin manager:
 
@@ -123,6 +122,7 @@ Same logic applies to `functions/`: just drop a script or folder there — it wi
 - [`sudo`](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo)
 - [`powerlevel10k`](https://github.com/romkatv/powerlevel10k)
 - [`abbreviation`](https://github.com/olets/zsh-abbr)
+
   > Well, there are some other minor things too.
   > 👉 [See example `plugin_list.zsh`](./_plugin_managers_/_zinit_/plugin_list.zsh)
 
@@ -130,7 +130,7 @@ All of these are preconfigured to provide the **best terminal workflow** out of 
 
 ---
 
-## 🎨 Prompt Themes
+## 🎨 [Prompt Themes](#prompt-themes)
 
 Multiple themes are available for **Powerlevel10k** prompt inside:
 [`./_plugin_managers_/_zinit_/plugins_config/powerlevel10k/prompts`](./_plugin_managers_/_zinit_/plugins_config/powerlevel10k/prompts)
@@ -148,7 +148,7 @@ Happy hacking in the terminal ⚡
 
 ---
 
-## 📎 Related
+## 📌 Related
 
 - [Zinit Wiki](https://github.com/zdharma-continuum/zinit/wiki)
 - [zsh-vi-mode Config](https://github.com/jeffreytse/zsh-vi-mode#configuration-function)
