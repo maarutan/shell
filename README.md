@@ -169,18 +169,20 @@ Happy hacking in the terminal ⚡
 ## 👾 Dependencies
 
 - for zsh
-  `fzf`,
-  `bat`,
-  `eza, exa,`,
-  `git`,
-  `zoxide`,
-  `z`,
+  `fzf`, <br/>
+  `bat`, <br/>
+  `eza`, <br/>
+  `git`, <br/>
+  `zoxide`, <br/>
+  `z`, <br/>
+  `chafa`, <br/>
 
 ---
 
 - for your system
-  `zsh`
-  `curl`
+  `bash`, <br/>
+  `zsh`, <br/>
+  `curl` <br/>
 
 ---
 
