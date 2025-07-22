@@ -86,8 +86,6 @@ BUILD() {
     fi
 
     cd "$RESULT_DIR_POS" || exit 1
-
-    source ~/.zshrc
     exec zsh
 
 }
