@@ -5,11 +5,12 @@
     <td><img width="376"  alt="Image" src="https://github.com/user-attachments/assets/d9080751-cf6f-4de5-b923-de406177a756" /></td>
     <td>
         <p style="font-size:20px">
-        <a href="##🧩-directory-structure">🧩 Directory Structure</a>
-        >  <a href="##⚙️-configuration-explained">⚙️ Configuration Explained</a>
-        >  <a href="##⚙️-configuration-explained">⚙️ Configuration Explained</a>
-        <a href="##🚀-installation">🚀 Installation</a>
-        <a href="##🗑-uninstallation">🗑 Uninstallation</a>
+        <h2>links: </h2> <br/>
+        <a href="#🧩-directory-structure">🧩 Directory Structure</a> <br/> 
+        >  <a href="#⚙️-configuration-explained">⚙️ Configuration Explained</a> <br/>
+        >  <a href="#⚙️-configuration-explained">⚙️ Configuration Explained</a> <br/>
+        <a href="#🚀-installation">🚀 Installation</a> <br/>
+        <a href="#🗑-uninstallation">🗑 Uninstallation</a> <br/>
         </p>
     </td>
 
