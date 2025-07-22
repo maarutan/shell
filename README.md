@@ -35,7 +35,7 @@ This is my custom **Zsh configuration** optimized for **maximum productivity** a
 ## 🧩 Directory Structure
 
 <details>
-<summary>Click to expand/collapse</summary>
+<summary>open and view the structure [ click 👆🏻]</summary>
 
 ```txt
 .
@@ -82,6 +82,8 @@ This is my custom **Zsh configuration** optimized for **maximum productivity** a
 ```
 
 ## </details>
+
+---
 
 ## ⚙️ Configuration Explained
 
