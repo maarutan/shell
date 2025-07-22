@@ -139,6 +139,19 @@ Happy hacking in the terminal ⚡
 ## 📎 Related
 
 - [Zinit Wiki](https://github.com/zdharma-continuum/zinit/wiki)
+- [zsh-vi-mode Config](https://github.com/jeffreytse/zsh-vi-mode#configuration-function)
+- [zsh-autopair Config](https://github.com/hlissner/zsh-autopair#configuration)
 - [Powerlevel10k Config](https://github.com/romkatv/powerlevel10k#configuration)
 - [fzf-tab Setup Guide](https://github.com/Aloxaf/fzf-tab#readme)
 - [zsh-abbr](https://github.com/olets/zsh-abbr)
+
+---
+
+## 📝 License
+
+See the [`LICENSE`](./LICENSE) file for terms.
+
+---
+
+> Built with ❤️ by [maarutan](https://github.com/maarutan)
+> I wish you maximum productivity. ⚡⚡⚡
