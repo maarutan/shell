@@ -19,6 +19,7 @@ CURRENT_DIR="$(dirname "$0")"
 
 dependencies_list=("git" "fzf" "bat" "zoxide" "chafa" "bash" "zsh")
 missing_deps=()
+bash
 
 check_dependencies() {
     for dep in "${dependencies_list[@]}"; do
