@@ -168,21 +168,23 @@ Happy hacking in the terminal ⚡
 
 ## 👾 Dependencies
 
-- for zsh <br/>
-  `fzf` <br/>
-  `bat` <br/>
-  `eza` <br/>
-  `git` <br/>
-  `zoxide` <br/>
-  `z` <br/>
-  `chafa` <br/>
+## Tools for Zsh
+
+- `fzf` - Command-line fuzzy finder for interactive file, command, and history search.
+- `bat` - A `cat` clone with syntax highlighting, Git integration, and paging.
+- `eza` - A modern replacement for `ls` with icons, Git info, and better formatting.
+- `git` - Distributed version control system for managing source code repositories.
+- `zoxide` - A smarter `cd` command that learns and prioritizes frequently visited directories.
+- `z` - Directory jumper that tracks your most-used directories and lets you jump to them quickly.
+- `chafa` - Terminal image viewer that converts images into colored ASCII/Unicode art.
 
 ---
 
-- for your system
-  `bash` <br/>
-  `zsh` <br/>
-  `curl` <br/>
+## Tools for Your System
+
+- `bash` - GNU Bourne Again SHell, a widely used Unix shell and command language.
+- `zsh` - Extended Unix shell with scripting features, plugin support, and vi-mode.
+- `curl` - Tool to transfer data from or to a server using protocols like HTTP, FTP, and more.
 
 ---
 
