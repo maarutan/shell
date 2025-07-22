@@ -5,7 +5,8 @@
     <td><img width="376"  alt="Image" src="https://github.com/user-attachments/assets/d9080751-cf6f-4de5-b923-de406177a756" /></td>
     <td>
         <p style="font-size:20px">
-        <a href="directory-structure">🧩 Directory Structure</a>
+> links
+        <a href="#directory-structure">🧩 Directory Structure</a>
         </p>
     </td>
   </tr>
