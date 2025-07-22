@@ -5,7 +5,6 @@
 #--------------------------------------------
 # (c) maarutan   https://github.com/maarutan
 
-bash -c "
 RED="\033[31m"
 GREEN="\033[32m"
 YELLOW="\033[33m"
@@ -87,8 +86,8 @@ BUILD() {
     fi
 
     cd "$RESULT_DIR_POS" || exit 1
-    exec zsh
+    bash -s -c "exec zsh"
 }
 
 BUILD
-"
+
