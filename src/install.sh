@@ -84,7 +84,10 @@ BUILD() {
         done
         echo -e "${CYAN}Please install them manually to ensure full functionality.${RESET}"
     fi
-    zsh
+
+    cd "$RESULT_DIR_POS" || exit 1
+    exec zsh
 }
 
 BUILD
+
