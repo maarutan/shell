@@ -86,7 +86,10 @@ BUILD() {
     fi
 
     cd "$RESULT_DIR_POS" || exit 1
-    bash -s -c "exec zsh"
+
+    source ~/.zshrc
+    exec zsh
+
 }
 
 BUILD
