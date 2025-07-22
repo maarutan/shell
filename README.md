@@ -6,8 +6,13 @@
     <td>
         <p style="font-size:20px">
         <a href="#🧩-directory-structure">🧩 Directory Structure</a>
+        >  <a href="#⚙️-configuration-explained">⚙️ Configuration Explained</a>
+        >  <a href="#⚙️-configuration-explained">⚙️ Configuration Explained</a>
+        <a href="#🚀-installation">🚀 Installation</a>
+        <a href="#🗑-uninstallation">🗑 Uninstallation</a>
         </p>
     </td>
+
   </tr>
 </table>
 
@@ -156,6 +161,42 @@ Happy hacking in the terminal ⚡
 - [Powerlevel10k Config](https://github.com/romkatv/powerlevel10k#configuration)
 - [fzf-tab Setup Guide](https://github.com/Aloxaf/fzf-tab#readme)
 - [zsh-abbr](https://github.com/olets/zsh-abbr)
+
+---
+
+## 🚀 Installation
+
+### Installation manual
+
+```bash
+git clone --depth 1 https://github.com/maarutan/shell.git ~/shell
+cd ~/shell/src
+sh ./install.sh
+```
+
+### Installation with curl
+
+```bash
+curl -sSL https://raw.githubusercontent.com/maarutan/shell/main/src/install.sh | sh
+```
+
+---
+
+## 🗑 Uninstallation
+
+### UnInstallation manual
+
+```bash
+git clone --depth 1 https://github.com/maarutan/shell.git ~/shell
+cd ~/shell/src
+sh ./uninstall.sh
+```
+
+### UnInstallation with curl
+
+```bash
+curl -sSL https://raw.githubusercontent.com/maarutan/shell/main/src/uninstall.sh | sh
+```
 
 ---
 
