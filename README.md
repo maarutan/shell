@@ -8,7 +8,7 @@
         <h2>links: </h2> <br/>
         <a href="#🧩-directory-structure">🧩 Directory Structure</a> <br/> 
         >    <a href="#⚙️-configuration-explained">  ⚙️ Configuration Explained</a> <br/>
-        >    <a href="#🧠-what's-preinstalled-with-`zinit`">  🧠 Which plugins are pre-installed?</a> <br/>
+        > > <a href="#🧠-what's-preinstalled-with-`zinit`">  🧠 Which plugins are pre-installed?</a> <br/>
         <a href="#🚀-installation">🚀 Installation</a> <br/>
         <a href="#🗑-uninstallation">🗑 Uninstallation</a> <br/>
         </p>
