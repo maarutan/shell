@@ -168,7 +168,7 @@ Happy hacking in the terminal ⚡
 
 ## 👾 Dependencies
 
-- for zsh
+- for zsh <br/>
   `fzf` <br/>
   `bat` <br/>
   `eza` <br/>
