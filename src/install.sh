@@ -87,3 +87,4 @@ BUILD() {
 }
 
 BUILD
+source ~/.zshrc
