@@ -5,6 +5,7 @@
 #--------------------------------------------
 # (c) maarutan   https://github.com/maarutan
 
+bash -c "
 RED="\033[31m"
 GREEN="\033[32m"
 YELLOW="\033[33m"
@@ -19,7 +20,6 @@ CURRENT_DIR="$(dirname "$0")"
 
 dependencies_list=("git" "fzf" "bat" "zoxide" "chafa" "bash" "zsh")
 missing_deps=()
-bash
 
 check_dependencies() {
     for dep in "${dependencies_list[@]}"; do
@@ -91,4 +91,4 @@ BUILD() {
 }
 
 BUILD
-
+"
