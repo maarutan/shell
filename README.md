@@ -105,10 +105,14 @@ Same logic applies to `functions/`: just drop a script or folder there — it wi
 - [`zsh-vi-mode`](https://github.com/jeffreytse/zsh-vi-mode)
 - [`fzf-tab`](https://github.com/Aloxaf/fzf-tab)
 - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions)
+- [`fast-syntax-highlighting`](https://github.com/zdharma-continuum/fast-syntax-highlighting)
+- [`zsh-autopair`](https://github.com/hlissner/zsh-autopair)
 - [`zsh-fzf-history-search`](https://github.com/joshskidmore/zsh-fzf-history-search)
 - [`sudo`](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo)
 - [`powerlevel10k`](https://github.com/romkatv/powerlevel10k)
 - [`abbreviation`](https://github.com/olets/zsh-abbr)
+  > Well, there are some other minor things too.
+  > 👉 [See example `plugin_list.zsh`](./_plugin_managers_/_zinit_/plugin_list.zsh)
 
 All of these are preconfigured to provide the **best terminal workflow** out of the box.
 
@@ -121,14 +125,6 @@ Multiple themes are available for **Powerlevel10k** prompt inside:
 
 Switch the theme by editing:
 [`powerlevel10k/init.zsh`](./_plugin_managers_/_zinit_/plugins_config/powerlevel10k/init.zsh)
-
----
-
-## 📦 Future Plans
-
-- Add more plugin manager templates (e.g. `zap`, `antidote`, `zplug`)
-- Improve init performance
-- Optional modules and UI toggles
 
 ---
 
