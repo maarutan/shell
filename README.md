@@ -6,7 +6,6 @@
     <td>
         <p style="font-size:20px">
         <h2>links: </h2> <br/>
-        <br/> 
         <a href="#🧩-directory-structure">🧩 Directory Structure</a> <br/> 
         <br/> 
         >    <a href="#⚙️-configuration-explained">  ⚙️ Configuration Explained</a> <br/>
@@ -18,7 +17,6 @@
         > > <a href="#🚀-installation">🚀 Installation</a> <br/>
         <br/> 
         <a href="#🗑-uninstallation">🗑 Uninstallation</a> <br/>
-        <br/> 
         </p>
     </td>
 
