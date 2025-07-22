@@ -168,7 +168,7 @@ Happy hacking in the terminal ⚡
 
 ## 👾 Dependencies
 
-## Tools for Zsh
+### Tools for Zsh
 
 - `fzf` - Command-line fuzzy finder for interactive file, command, and history search.
 - `bat` - A `cat` clone with syntax highlighting, Git integration, and paging.
@@ -180,7 +180,7 @@ Happy hacking in the terminal ⚡
 
 ---
 
-## Tools for Your System
+### Tools for Your System
 
 - `bash` - GNU Bourne Again SHell, a widely used Unix shell and command language.
 - `zsh` - Extended Unix shell with scripting features, plugin support, and vi-mode.
