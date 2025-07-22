@@ -6,12 +6,12 @@
     <td>
         <p style="font-size:20px">
         <h2>links: </h2> <br/>
-        <a href="#🧩-directory-structure">🧩 Directory Structure</a> <br/> 
-        >    _<a href="#⚙️-configuration-explained">  ⚙️ Configuration Explained</a> <br/>
-        > > __<a href="#🧠-what's-preinstalled-with-`zinit`">  🧠 Which plugins are pre-installed?</a> <br/>
-        _<a href="#👾-dependencies">👾 Dependencies</a> <br/>
-        > > __<a href="#🚀-installation">🚀 Installation</a> <br/>
-        <a href="#🗑-uninstallation">🗑 Uninstallation</a> <br/>
+        <a href="#directory-structure">🧩 Directory Structure</a><br/> 
+        <a href="#configuration-explained">⚙️ Configuration Explained</a><br/>
+        <a href="#whats-preinstalled-with-zinit">🧠 Which plugins are pre-installed?</a><br/>
+        <a href="#dependencies">👾 Dependencies</a><br/>
+        <a href="#installation">🚀 Installation</a><br/>
+        <a href="#uninstallation">🗑 Uninstallation</a><br/>
         </p>
     </td>
 
@@ -210,6 +210,8 @@ curl -sSL https://raw.githubusercontent.com/maarutan/shell/main/src/install.sh |
 git clone --depth 1 https://github.com/maarutan/shell.git ~/shell
 cd ~/shell/src
 sh ./uninstall.sh
+rm -rf ~/shell
+cd ~/
 ```
 
 ### UnInstallation with curl
