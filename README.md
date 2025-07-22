@@ -1,6 +1,6 @@
 # ⚡ Zsh Configuration for Productivity and Vi-style Workflow
 
-<img width="576" height="531" alt="Image" src="https://github.com/user-attachments/assets/d9080751-cf6f-4de5-b923-de406177a756" />
+<img width="476"  alt="Image" src="https://github.com/user-attachments/assets/d9080751-cf6f-4de5-b923-de406177a756" />
 
 This is my custom **Zsh configuration** optimized for **maximum productivity** and a **Vi-like experience** in the terminal. It's minimal, elegant, modular, and highly extensible.
 
