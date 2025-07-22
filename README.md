@@ -34,6 +34,9 @@ This is my custom **Zsh configuration** optimized for **maximum productivity** a
 
 ## 🧩 Directory Structure
 
+<details>
+<summary>Click to expand/collapse</summary>
+
 ```txt
 .
 ├── aliases.zsh
@@ -78,7 +81,7 @@ This is my custom **Zsh configuration** optimized for **maximum productivity** a
 └── zshrc                       # User Zsh entry file
 ```
 
----
+## </details>
 
 ## ⚙️ Configuration Explained
 
