@@ -7,15 +7,10 @@
         <p style="font-size:20px">
         <h2>links: </h2> <br/>
         <a href="#🧩-directory-structure">🧩 Directory Structure</a> <br/> 
-        <br/> 
-        >    <a href="#⚙️-configuration-explained">  ⚙️ Configuration Explained</a> <br/>
-        <br/> 
-        > > <a href="#🧠-what's-preinstalled-with-`zinit`">  🧠 Which plugins are pre-installed?</a> <br/>
-        <br/> 
-        <a href="#👾-dependencies">👾 Dependencies</a> <br/>
-        <br/> 
-        > > <a href="#🚀-installation">🚀 Installation</a> <br/>
-        <br/> 
+        >    _<a href="#⚙️-configuration-explained">  ⚙️ Configuration Explained</a> <br/>
+        > > __<a href="#🧠-what's-preinstalled-with-`zinit`">  🧠 Which plugins are pre-installed?</a> <br/>
+        _<a href="#👾-dependencies">👾 Dependencies</a> <br/>
+        > > __<a href="#🚀-installation">🚀 Installation</a> <br/>
         <a href="#🗑-uninstallation">🗑 Uninstallation</a> <br/>
         </p>
     </td>
