@@ -84,7 +84,7 @@ BUILD() {
         done
         echo -e "${CYAN}Please install them manually to ensure full functionality.${RESET}"
     fi
-    exec zsh
+    zsh
 }
 
 BUILD
