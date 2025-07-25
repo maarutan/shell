@@ -1,5 +1,10 @@
 #!/usr/bin/env zsh
-
+# ┬┌─┌─┐┬ ┬┌┐ ┬┌┐┌┌┬┐┬┌┐┌┌─┐┌─┐
+# ├┴┐├┤ └┬┘├┴┐││││ │││││││ ┬└─┐
+# ┴ ┴└─┘ ┴ └─┘┴┘└┘─┴┘┴┘└┘└─┘└─┘
+#---------------------------------------------------------------------
+# Copyright (c) 2025 maarutan \ Marat Arzymatov. All Rights Reserved.
+# https://github.com/maarutan
 
 bindkey -v
 
