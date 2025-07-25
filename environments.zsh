@@ -44,9 +44,10 @@ autoload -Uz edit-command-line; zle -N edit-command-line
 export EDITOR="nvim"                # default EDITOR = nvim
 export VISUAL="nvim"                # devault VISUAL EDITOR = nvim
 export QT_QPA_PLATFORMTHEME=qt5ct   # support qt5 theme
+export HISTORY="$ZSH_CONFIG"/.history # where your history ???
 
 # History settings
-HISTFILE=$ZSH_CONFIG/".history"      # where your history ???
+HISTFILE="$HISTORY"                 # where your history ???
 HISTSIZE=100000                     # history size
 SAVEHIST=100000                     # max history save
 
