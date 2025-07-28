@@ -20,5 +20,7 @@ ABBR_SET_EXPANSION_CURSOR=1
 rm -rf "${JOB_QUEUE_TMPDIR:-/tmp}/zsh-abbr" 2>/dev/null || true
 rm -rf "${JOB_QUEUE_TMPDIR:-/tmp}/zsh-job-queue/zsh-abbr" 2>/dev/null || true
 
-
+mkdir -p "${JOB_QUEUE_TMPDIR:-/tmp}/zsh-abbr"
+touch "${JOB_QUEUE_TMPDIR:-/tmp}/zsh-abbr/regular-user-abbreviations"
+touch "${JOB_QUEUE_TMPDIR:-/tmp}/zsh-abbr/global-user-abbreviations"
 
